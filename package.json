@@ -1,0 +1,20 @@
+{
+  "name": "webComponents-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/sakito21/webComponents-playground.git",
+  "author": "sakito <sakito21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/web-components": "^5.3.9",
+    "babel-loader": "^8.0.6"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
