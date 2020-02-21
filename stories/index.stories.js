@@ -1,25 +1,10 @@
 import { html } from 'lit-html';
 
 export default {
-  title: 'Demo',
+  title: 'ボタンのネイティブ HTML 要素の拡張',
+  component: 'fancy-button',
 };
 
-export const Heading = () => html`
-  <h1>Hello World</h1>
-`;
-
-export const SettingProperties = () => html`
-  <my-component .data=${{ header: 'foo', state: true }}>Hello Worssssld</my-component>
-`;
-
-export const Events = () => html`
-  <button @click=${ev => console.log('clicked button')}>clicking will get logged to console</button>
-`;
-
-export const WithFunction = () => {
-  const header = 'My Header';
-  return html`
-    <h1>${header}</h1>
-  `;
-};
-
+export const Normal = () => {
+  return html`<button is="fancy-button">Fancy button!</button>`;
+}
